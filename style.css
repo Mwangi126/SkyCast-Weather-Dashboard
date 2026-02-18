@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI';
+    background: linear-gradient(120deg,#89f7fe,#66a6ff);
+    transition: 1s;
+}
+.card{
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    box-shadow:0 0 30px rgba(0,0,0,0.2);
+    animation:fade 1s ease;
+}
+@keyframes fade{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 65%;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
+.locBtn{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.loader{
+    border: 5px solid white;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    100%{transform:rotate(360deg);}
+}
+.hidden{
+    display: none;
+}
+
+#forecast{
+display:flex;
+gap:10px;
+margin-top:15px;
+overflow-x:auto;
+}
+
+.day{
+background:rgba(255,255,255,0.2);
+padding:10px;
+border-radius:10px;
+min-width:70px;
+text-align:center;
+}
