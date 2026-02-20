@@ -40,6 +40,9 @@
 
 ## 🌍 Live Demo
 
-[*Mwangi Weather Dashboard*](https://aesthetic-lollipop-17c171.netlify.app/)  
+
+
+
+[*Mwangi Weather Dashboard*](https://mwangi-weather-dashboard.netlify.app)  
 
 ---
